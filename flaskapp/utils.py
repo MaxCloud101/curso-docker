@@ -1,2 +1,2 @@
 def welcome_message():
-    return "hello world"
+    return "<p>Hello, World!</p>"
