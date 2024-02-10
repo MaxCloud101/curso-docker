@@ -31,3 +31,4 @@ workflows:
                     branches:
                       only:
                         - main
+            - build
