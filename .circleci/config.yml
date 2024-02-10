@@ -1,0 +1,11 @@
+version: 2.1
+jobs:
+  test:
+    docker:
+      - image: cimg/base:stable
+    steps:
+      - checkout
+      # Replace this with a real test runner invocation
+      - run:
+          name: Run tests
+          command: echo 'replace me with real tests!' 
