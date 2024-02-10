@@ -21,10 +21,13 @@ jobs:
             - checkout
             - setup_remote_docker
             - run:
+                name: Copy files
+                command: cp -r flaskapp .
+            - run:
                 name: Build and Push application Docker image
                 command: |
                     TAG=0.1.$CIRCLE_BUILD_NUM
-                    docker build -t $DOCKERHUB_USERNAME/myapp:${CIRCLE_BUILD_NUM} -f flaskapp/Dockerfile .
+                    docker build -t $DOCKERHUB_USERNAME/myapp:${CIRCLE_BUILD_NUM} .
                     docker login -u $DOCKERHUB_USERNAME --password-stdin
                     docker push $DOCKERHUB_USERNAME/myapp:${CIRCLE_BUILD_NUM}
 
