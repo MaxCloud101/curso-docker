@@ -2,7 +2,7 @@ version: 2.1
 jobs:
   test:
     docker:
-      - image: cimg/base:stable
+      - image: python:3.10.13
     steps:
       - checkout
       # Replace this with a real test runner invocation
