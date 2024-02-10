@@ -5,10 +5,12 @@ jobs:
       - image: python:3.10.13
     steps:
       - checkout
-      # Replace this with a real test runner invocation
       - run:
-          name: Run tests
-          command: python3 flaskapp/test.py 
+            name: Show version
+            command: pythno3 --version
+      - run:
+            name: Run tests
+            command: python3 flaskapp/test.py 
 workflows:
   example:
     jobs:
