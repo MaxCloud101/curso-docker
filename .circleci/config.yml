@@ -1,17 +1,37 @@
 version: 2.1
 jobs:
-  test:
-    docker:
-      - image: python:3.10.13
-    steps:
-      - checkout
-      - run:
-            name: Show Welcome
-            command: echo "Bienvenidos a circle CI"
-      - run:
-            name: Run tests
-            command: python3 flaskapp/test.py 
-workflows:
-  example:
-    jobs:
-      - test
+    test:
+        docker:
+            - image: python:3.10.13
+        steps:
+            - checkout
+            - run:
+                name: Show version
+                command: python3 --version
+            - run:
+                name: Run tests
+                command: python3 flaskapp/test.py 
+        filters:
+            branches:
+                only:
+                    - main
+    build:
+        docker:
+            - image: python:3.10.13
+        steps:
+            - checkout
+            - run:
+                name: Show version
+                command: python3 --version
+            - run:
+                name: Run tests
+                command: python3 flaskapp/test.py 
+        filters:
+            branches:
+                only:
+                    - develop
+
+#workflows:
+#    example:
+#        jobs:
+#            - test
