@@ -33,7 +33,7 @@ jobs:
 workflows:
     example:
         jobs:
-            - test
+            - test:
                 filters:
                     tags:
                         only: /.*/
