@@ -9,3 +9,7 @@ jobs:
       - run:
           name: Run tests
           command: echo 'replace me with real tests!' 
+workflows:
+  example:
+    jobs:
+      - test
