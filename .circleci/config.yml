@@ -22,7 +22,7 @@ jobs:
             - setup_remote_docker
             - run:
                 name: Copy files
-                command: rm -r flaskapp/__pycache__ | cp flaskapp/* .
+                command: cp flaskapp/* .
             - run:
                 name: Build and Push application Docker image
                 command: |
