@@ -19,6 +19,7 @@ jobs:
                 password: $DOCKERHUB_PASSWORD
         steps:
             - checkout
+            - setup_remote_docker
             - run:
                 name: Build and Push application Docker image
                 command: |
