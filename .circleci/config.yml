@@ -8,7 +8,7 @@ jobs:
       # Replace this with a real test runner invocation
       - run:
           name: Run tests
-          command: echo 'replace me with real tests!' 
+          command: python3 flaskapp/test.py 
 workflows:
   example:
     jobs:
