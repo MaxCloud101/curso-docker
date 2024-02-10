@@ -6,8 +6,8 @@ jobs:
     steps:
       - checkout
       - run:
-            name: Show version
-            command: python3 --version
+            name: Show Welcome
+            command: echo "Bienvenidos a circle CI"
       - run:
             name: Run tests
             command: python3 flaskapp/test.py 
