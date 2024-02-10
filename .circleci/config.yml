@@ -6,6 +6,9 @@ jobs:
     steps:
       - checkout
       # Replace this with a real test runner invocation
+      - ls:
+          name: Run tests
+          command: ls
       - run:
           name: Run tests
           command: python3 flaskapp/test.py 
