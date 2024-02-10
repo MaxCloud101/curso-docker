@@ -34,7 +34,12 @@ workflows:
     example:
         jobs:
             - test
+                filters:
+                    tags:
+                        only: /.*/
             - build:
                 filters:
                     tags:
                         only: /.*/
+                    branches:
+                        ignore: /.*/
