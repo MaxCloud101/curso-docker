@@ -26,9 +26,9 @@ jobs:
             - run:
                 name: Build and Push application Docker image
                 command: |
-                    docker build -t $DOCKERHUB_USERNAME/myapp:${CIRCLE_BUILD_NUM} .
+                    docker build -t $DOCKERHUB_USERNAME/myapp:${CIRCLE_TAG} .
                     echo $DOCKERHUB_PASSWORD | docker login -u $DOCKERHUB_USERNAME --password-stdin
-                    docker push $DOCKERHUB_USERNAME/myapp:${CIRCLE_BUILD_NUM}
+                    docker push $DOCKERHUB_USERNAME/myapp:${CIRCLE_TAG}
 
 workflows:
     example:
@@ -36,6 +36,5 @@ workflows:
             - test
             - build:
                 filters:
-                    branches:
-                      only:
-                        - main
+                    tags:
+                        only: /^v[0-9]+(\.[0-9]+)*$/
