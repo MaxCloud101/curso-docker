@@ -13,15 +13,12 @@ jobs:
                 command: python3 flaskapp/test.py 
     build:
         docker:
-            - image: python:3.10.13
+            - image: cimg/base:2022.09
         steps:
             - checkout
             - run:
                 name: Show version
-                command: python3 --version
-            - run:
-                name: Run tests
-                command: python3 flaskapp/test.py 
+                command: echo "hola"
 
 workflows:
     example:
