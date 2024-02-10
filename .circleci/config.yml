@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
             name: Show version
-            command: pythno3 --version
+            command: python3 --version
       - run:
             name: Run tests
             command: python3 flaskapp/test.py 
