@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - sudo apt update
+      - sudo apt install software-properties-common -y 
+      - sudo add-apt-repository ppa:deadsnakes/ppa 
+      - sudo apt install Python3.10
+  pre_build:
+    commands:
+      - python3 flaskapp/test.py
+  build:
+    commands:
+      - echo $CODEBUILD_BUILD_NUMBER
+      - echo $AWS_ACCOUNT_ID
+      - echo $AWS_DEFAULT_REGION
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+      - rm -r flaskapp/__pycache__
+      - cp flaskapp/* .
+      - docker build -t myapp .
+      - docker tag myapp:latest $AWS_ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/myapp:$CODEBUILD_BUILD_NUMBER
+  post_build:
+    commands:
+      - docker push $AWS_ACCOUNT_ID.dkr.ecr.us-west-2.amazonaws.com/myapp:$CODEBUILD_BUILD_NUMBER
