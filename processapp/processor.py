@@ -3,17 +3,21 @@ import boto3
 import os
 
 dynamodb = boto3.resource('dynamodb')
+s3 = boto3.client('s3')
 
 
-print(os.environ['S3_KEY'])
+bucket = os.environ['S3_BUCKET']
+key = os.environ['S3_KEY']
 
-file_name = "files/2023-12-01.csv"
+print(bucket)
+print(key)
 
-date = file_name.split('/')
-date = date[1].split('.')
+s3.download_file(bucket, key, key)
+
+date = key.split('.')
 date = date[0]
 
-file1 = open(file_name, 'r')
+file1 = open(key, 'r')
 Lines = file1.readlines()
  
 list_user_id = []
