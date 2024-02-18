@@ -30,13 +30,13 @@ Un registro de Docker almacena imágenes de Docker. Por ejemplo Docker Hub es un
 
 Cuando utiliza los comandos docker pull o docker run, Docker extrae las imágenes necesarias de su registro configurado. Cuando utiliza el comando docker push, Docker envía su imagen a su registro configurado.
 
-#### Imágenes
+### Imágenes
 
 Una imagen es una plantilla de solo lectura con instrucciones para crear un contenedor Docker. Usualmente, una imagen se basa en otra imagen, con alguna personalización adicional. Por ejemplo, puedes crear una imagen basada en la imagen de Ubuntu, pero con el servidor web Apache y tu aplicación, así como los detalles de configuración necesarios para que tu aplicación se ejecute.
 
 Puedes crear tus propias imágenes o utilizar únicamente aquellas creadas por otros y publicadas en un registro. Para crear tu propia imagen, crea un Dockerfile con una sintaxis simple para definir los pasos necesarios para crear la imagen y ejecutala. 
 
-#### Contenedores
+### Contenedores
 
 Un contenedor es una instancia ejecutable de una imagen. Puedes crear, iniciar, detener, mover o eliminar un contenedor mediante la API o CLI de Docker. Puedes conectar un contenedor a una o más redes, adjuntarle almacenamiento o incluso crear una nueva imagen basada en su estado actual.
 
