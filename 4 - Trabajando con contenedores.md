@@ -13,9 +13,9 @@ $ docker run busybox echo hello world
 
 veremos un resultado similar al mostrado en la siguiente imagen
 
-<center>
-<img src="img/hello-world.png" style="width: 100%; max-width: 600px;">
-</center>
+<p align="center">
+<img src="img/hello-world.png" style="max-width: 400px;">
+</p>
 
 A continuacion vamos a explicar cada uno de los sucesos
 
@@ -74,10 +74,9 @@ $ docker run nginx
 
 Vamos a ver que nuestro shell se quedara atachado a los logs del contenedor
 
-<center>
-<img src="img/run-1.png" style="width: 100%; max-width: 600px;">
-</center>
-
+<p align="center">
+<img src="img/run-1.png" style="max-width: 400px;">
+</p>
 Para detener el contenedor presionamos "ctrl + C"
 
 2 Para obtener una respuesta de nustro servidor vamos a enlazarlo a un puerto, para ello lanzamos el siguiente comando
@@ -96,15 +95,15 @@ $ curl localhost:8080
 
 En la siguiente imagen correspondiente a los logs del contenedor, vemos en la ultima linea que el servidor nginx recibió la petición y retorno la respuesta
 
-<center>
-<img src="img/run-2.png" style="width: 100%; max-width: 600px;">
-</center>
+<p align="center">
+<img src="img/run-2.png" style="max-width: 400px;">
+</p>
 
 Por otro lado en la pestaña donde hicimos curl, verificamos que la respuesta fue el html de bienvenida de nginx
 
-<center>
-<img src="img/run-3.png" style="width: 100%; max-width: 600px;">
-</center>
+<p align="center">
+<img src="img/run-3.png" style="max-width: 400px;">
+</p>
 
 4 Para correr el servidor nginx como demonio y que no se nos quede atachado a la consola vamos a utilizar la bandera "-d" (d por la palabra DETACHED)
 
@@ -114,9 +113,9 @@ $ docker run -p 8080:80 -d nginx
 
 vamos a ver que el contenedor empieza a correr desatachado de la consola
 
-<center>
-<img src="img/run-4.png" style="width: 100%; max-width: 600px;">
-</center>
+<p align="center">
+<img src="img/run-4.png" style="max-width: 400px;">
+</p>
 
 5 Para agregar un nombre a nuestro contenedor vamos lanzar el siguiente comando
 
