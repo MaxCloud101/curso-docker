@@ -29,4 +29,4 @@ Bienvenido al curso de Docker, a travez de las siguiente 14 lecciones vas a apre
 
 13 - Procesamiento de datos
 
-14 - contenedores para machine learning
+14 - Contenedores para machine learning
