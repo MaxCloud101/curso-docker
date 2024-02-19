@@ -1,4 +1,4 @@
-# Taller 1: CI/CD con CircleCI
+# Taller 1: CI/CD con GitHub, CircleCI y DockerHub
 
 1 Primero vamos a realizar un fork del repositorio, para tener el proyecto en nuestra cuenta de GitHub
 
