@@ -272,12 +272,21 @@ Si todo se realzó con éxito vamos a ver el paso de la maquina de estados en ve
 11 Finalmente no olvides eliminar los siguiente recursos
 
 1 Tabla en DynamoDB
+
 2 Regla en Amazon EventBridge
+
 3 Maquina de estados en Step Function
+
 4 En AWS Batch primero debes deshabilitar la cola y luego eliminar
-5 En Job definitions no se puede eliminar la definición del job, solo se puede "Deregister"
+
+5 En Job definitions no se puede eliminar la definición del job, solo se puede "Deregister
+
 6 Eliminar el el repositio en AWS ECR
+
 7 Eliminar el nat Gateway
+
 8 Una vez se elimine el Nat Gateway vamos a Elastic Ip debes seleccionar el recurso creado y darle "Release Elastic IP addresses"
+
 9 Eliminar la subnet privada que habíamos creado
+
 10 Eliminar la route table
