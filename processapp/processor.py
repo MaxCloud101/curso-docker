@@ -52,5 +52,5 @@ with table.batch_writer() as writer:
         writer.put_item(Item={
             'date': date,
             'user_id': user_id,
-            'stud_id': spend_by_user
+            'spend': spend_by_user
         })
