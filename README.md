@@ -3,30 +3,31 @@
 Bienvenido al curso de Docker, a travez de las siguiente 14 lecciones vas a aprender a crear contenedores y saber como llevarlos a produccion
 
 
-1 - Introduccion 
 
-2 - Trabajando con docker
+1 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/1%20-%20Introduccion.md" title="Introduccion">Introduccion</a> 
 
-3 - Trabajando con imagenes
+2 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/2%20-%20Trabajando%20con%20docker.md" title="Introduccion">Trabajando con docker</a>
 
-4 - Trabajando con contenedores
+3 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/3%20-%20Trabajando%20con%20imagenes.md" title="Introduccion">Trabajando con imagenes</a>
 
-5 - Trabajando con volumenes
+4 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/4%20-%20Trabajando%20con%20contenedores.md" title="Introduccion">Trabajando con contenedores</a>
 
-6 - Copiando data
+5 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/5%20-%20Trabajando%20con%20volumenes.md">Trabajando con volumenes</a>
 
-7 - Enlazando contenedores
+6 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/6%20-%20Copiando%20data.md">Copiando data</a>
 
-8 - Contruyendo el Dockerfile
+7 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/7%20-%20Enlazando%20contenedores.md">Enlazando contenedores</a>
 
-9 - Llevando el contenedor al registro
+8 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/8%20-%20Contruyendo%20el%20Dockerfile.md">Contruyendo el Dockerfile</a>
 
-10 - Ejemplos practicos
+9 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/9%20-%20Llevando%20el%20contenedor%20al%20registro.md">Llevando el contenedor al registro</a>
 
-11 - Cicd-taller-1
+10 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/10%20-%20Ejemplos%20practicos.md">Ejemplos practicos</a>
 
-12 - Cicd-taller-2
+11 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/11%20-%20Cicd-taller-1.md">Cicd-taller-1</a>
 
-13 - Procesamiento de datos
+12 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/12%20-%20Cicd-taller-2.md">Cicd-taller-2</a>
 
-14 - Contenedores para machine learning
+13 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/13%20-%20Procesamiento%20de%20datos.md">Procesamiento de datos</a>
+
+14 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/14%20-%20contenedores%20para%20ml.ipynb">Contenedores para machine learning</a>
