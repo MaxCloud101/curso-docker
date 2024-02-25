@@ -53,3 +53,17 @@ También podemos montar un volumen del contenedor y enlazarlo con una carpeta en
 ```sh
 docker run -v /home/ec2-user/environment/max:/app -p 8080:80 -d nginx
 ```
+
+## Eliminando todos los recursos creados
+
+Si deseas eliminar rapidamente todos los recursos creados (containers, networks, images), utilizaras el siguiente comando
+
+```sh
+docker system prune -a
+```
+
+Si tambien quieres eliminar los volumenes, debes lanzar el siguiente comando
+
+```sh
+docker system prune -a --volumes
+```
