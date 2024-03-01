@@ -31,3 +31,5 @@ Bienvenido al curso de Docker, a travez de las siguiente 14 lecciones vas a apre
 13 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/13%20-%20Procesamiento%20de%20datos.md">Procesamiento de datos</a>
 
 14 - <a href="https://github.com/MaxCloud101/curso-docker/blob/main/14%20-%20contenedores%20para%20ml.ipynb">Contenedores para machine learning</a>
+
+Muchas gracias!
