@@ -7,7 +7,7 @@ class TestStringMethods(unittest.TestCase):
         self.assertEqual('foo'.upper(), 'FOO')
     
     def test_welcome_message(self):
-        self.assertEqual(welcome_message(), "<>Hello, World!</p>")
+        self.assertEqual(welcome_message(), "<p>Hello, World!</p>")
     
 if __name__ == '__main__':
     unittest.main()
